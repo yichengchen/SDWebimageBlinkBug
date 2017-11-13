@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -14,6 +14,10 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kej-lG-ECy"/>
+                        <viewControllerLayoutGuide type="bottom" id="aBM-3X-nxi"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -68,15 +72,14 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="uVX-to-sVY" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="4ob-cg-SbI"/>
-                            <constraint firstItem="Pwt-hk-3J1" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="51Q-9F-j3j"/>
+                            <constraint firstItem="uVX-to-sVY" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="4ob-cg-SbI"/>
+                            <constraint firstItem="Pwt-hk-3J1" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="51Q-9F-j3j"/>
                             <constraint firstItem="uVX-to-sVY" firstAttribute="top" secondItem="Pwt-hk-3J1" secondAttribute="bottom" id="EcN-Zp-oi3"/>
                             <constraint firstItem="Pwt-hk-3J1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="FeD-rS-4QI"/>
-                            <constraint firstItem="Pwt-hk-3J1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="MiU-vs-n2h"/>
-                            <constraint firstItem="uVX-to-sVY" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="cyx-mC-Ftn"/>
-                            <constraint firstItem="uVX-to-sVY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zhb-Bz-RTW"/>
+                            <constraint firstItem="Pwt-hk-3J1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="MiU-vs-n2h"/>
+                            <constraint firstItem="uVX-to-sVY" firstAttribute="bottom" secondItem="aBM-3X-nxi" secondAttribute="top" id="cyx-mC-Ftn"/>
+                            <constraint firstItem="uVX-to-sVY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="zhb-Bz-RTW"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="uVX-to-sVY" id="Ric-4D-RtN"/>
